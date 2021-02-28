@@ -109,7 +109,39 @@ h3 {
   color: #e67e22;
   margin-bottom: 10px;
 }
-/* -----buttons----- */
+
+.icon-small {
+  font-size: 120%;
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  margin-right: 10px;
+  color: #e67e22;
+
+  /*secrets to aligning text with icon!*/
+  line-height: 120%;
+  vertical-align: middle;
+  /*negative margin brings closer(to the center in this case!)*/
+  margin-top: -5px;
+}
+
+/* -----Generic Links----- */
+
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 0px solid transparent;
+}
+/* -----Buttons----- */
 
 .btn:link,
 .btn:visited {
@@ -306,4 +338,18 @@ header {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ---------------------------- */
+/* Cities */
+/* ---------------------------- */
+
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
 }
